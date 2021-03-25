@@ -16,5 +16,25 @@ namespace EjercicioListaPaises
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                checkedListBox2.Items.Add(checkedListBox1.SelectedItem);
+                int i = checkedListBox1.SelectedIndex;
+                checkedListBox1.Items.RemoveAt(i);
+            }catch { MessageBox.Show("Revisa la acción"); }
+        }
+
+        private void butIzquierda_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                checkedListBox1.Items.Add(checkedListBox2.SelectedItem);
+                int i = checkedListBox2.SelectedIndex;
+                checkedListBox2.Items.RemoveAt(i);
+            }catch { MessageBox.Show("Revisa la acción"); }
+        }
     }
 }
