@@ -49,7 +49,7 @@ namespace EjercicioListaPaises
             "Rumania"});
             this.checkedListBox1.Location = new System.Drawing.Point(58, 77);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(239, 293);
+            this.checkedListBox1.Size = new System.Drawing.Size(239, 225);
             this.checkedListBox1.TabIndex = 0;
             // 
             // checkedListBox2
@@ -64,7 +64,7 @@ namespace EjercicioListaPaises
             "Alemania"});
             this.checkedListBox2.Location = new System.Drawing.Point(494, 77);
             this.checkedListBox2.Name = "checkedListBox2";
-            this.checkedListBox2.Size = new System.Drawing.Size(221, 293);
+            this.checkedListBox2.Size = new System.Drawing.Size(221, 225);
             this.checkedListBox2.TabIndex = 1;
             // 
             // butDerecha
@@ -91,15 +91,15 @@ namespace EjercicioListaPaises
             // 
             // textEditar
             // 
-            this.textEditar.Location = new System.Drawing.Point(336, 285);
+            this.textEditar.Location = new System.Drawing.Point(336, 229);
             this.textEditar.Name = "textEditar";
-            this.textEditar.Size = new System.Drawing.Size(127, 22);
+            this.textEditar.Size = new System.Drawing.Size(125, 22);
             this.textEditar.TabIndex = 4;
             this.textEditar.TextChanged += new System.EventHandler(this.textEditar_TextChanged);
             // 
             // butCambio
             // 
-            this.butCambio.Location = new System.Drawing.Point(336, 313);
+            this.butCambio.Location = new System.Drawing.Point(336, 257);
             this.butCambio.Name = "butCambio";
             this.butCambio.Size = new System.Drawing.Size(127, 23);
             this.butCambio.TabIndex = 5;
@@ -111,7 +111,7 @@ namespace EjercicioListaPaises
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 351);
             this.Controls.Add(this.butCambio);
             this.Controls.Add(this.textEditar);
             this.Controls.Add(this.butIzquierda);
