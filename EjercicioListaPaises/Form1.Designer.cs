@@ -33,6 +33,8 @@ namespace EjercicioListaPaises
             this.checkedListBox2 = new System.Windows.Forms.CheckedListBox();
             this.butDerecha = new System.Windows.Forms.Button();
             this.butIzquierda = new System.Windows.Forms.Button();
+            this.textEditar = new System.Windows.Forms.TextBox();
+            this.butCambio = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -79,7 +81,7 @@ namespace EjercicioListaPaises
             // butIzquierda
             // 
             this.butIzquierda.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.butIzquierda.Location = new System.Drawing.Point(338, 210);
+            this.butIzquierda.Location = new System.Drawing.Point(336, 172);
             this.butIzquierda.Name = "butIzquierda";
             this.butIzquierda.Size = new System.Drawing.Size(125, 30);
             this.butIzquierda.TabIndex = 3;
@@ -87,11 +89,31 @@ namespace EjercicioListaPaises
             this.butIzquierda.UseVisualStyleBackColor = false;
             this.butIzquierda.Click += new System.EventHandler(this.butIzquierda_Click);
             // 
+            // textEditar
+            // 
+            this.textEditar.Location = new System.Drawing.Point(336, 285);
+            this.textEditar.Name = "textEditar";
+            this.textEditar.Size = new System.Drawing.Size(127, 22);
+            this.textEditar.TabIndex = 4;
+            this.textEditar.TextChanged += new System.EventHandler(this.textEditar_TextChanged);
+            // 
+            // butCambio
+            // 
+            this.butCambio.Location = new System.Drawing.Point(336, 313);
+            this.butCambio.Name = "butCambio";
+            this.butCambio.Size = new System.Drawing.Size(127, 23);
+            this.butCambio.TabIndex = 5;
+            this.butCambio.Text = "Editar";
+            this.butCambio.UseVisualStyleBackColor = true;
+            this.butCambio.Click += new System.EventHandler(this.butCambio_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.butCambio);
+            this.Controls.Add(this.textEditar);
             this.Controls.Add(this.butIzquierda);
             this.Controls.Add(this.butDerecha);
             this.Controls.Add(this.checkedListBox2);
@@ -99,6 +121,7 @@ namespace EjercicioListaPaises
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -108,6 +131,8 @@ namespace EjercicioListaPaises
         private System.Windows.Forms.CheckedListBox checkedListBox2;
         private System.Windows.Forms.Button butDerecha;
         private System.Windows.Forms.Button butIzquierda;
+        private System.Windows.Forms.TextBox textEditar;
+        private System.Windows.Forms.Button butCambio;
     }
 }
 

@@ -16,6 +16,7 @@ namespace EjercicioListaPaises
         {
             InitializeComponent();
         }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -35,6 +36,18 @@ namespace EjercicioListaPaises
                 int i = checkedListBox2.SelectedIndex;
                 checkedListBox2.Items.RemoveAt(i);
             }catch { MessageBox.Show("Revisa la acción"); }
+        }
+
+        private void butCambio_Click(object sender, EventArgs e)
+        {
+
+            //checkedListBox1.SelectedItem = textEditar.Text.ToString() ;
+            
+        }
+
+        private void textEditar_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
